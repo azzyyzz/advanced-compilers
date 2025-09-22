@@ -10,7 +10,7 @@ public class Unification {
         if (S.equals(T)) {
             return S;
         } else if (T instanceof TypeVar type) {
-            return 
+            return S;
         }
         throw new IllegalArgumentException("[ERROR_UNEXPECTED_TYPE_FOR_EXPRESSION]");
     }
