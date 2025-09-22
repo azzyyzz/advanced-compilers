@@ -113,7 +113,7 @@ public class BidirectionalCheck {
 
     public boolean checkNot(Class<?> expectedType, Type actualType) {
         if (!(expectedType.isInstance(actualType))) {
-            System.out.println(expectedType.getName() + " " + actualType.getClass());
+            // System.out.println(expectedType.getName() + " " + actualType.getClass());
             if (actualType instanceof TypeSum) {
                 throw new IllegalArgumentException("[ERROR_UNEXPECTED_INJECTION]");
             } else if (actualType instanceof TypeList) {
